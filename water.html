@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+	<title>Моніторинг якості потоків води – ЕкоЛаб</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<link
+	  rel="stylesheet"
+	  href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+	  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+	  crossorigin=""
+	/>
+	<script
+	  src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+	  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+	  crossorigin=""
+	></script>
+	<link rel="stylesheet" href="css/style.min.css" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ </head>
+ 
+  <body>
+    <div class="wrapper">
+      <header class="header">
+  <div class="header__container _container">
+    <a href="/" class="header__logo title" title="Повернутись на головну"
+      >Eco<span class="title__highlighted">Lab</span></a
+    >
+    <nav class="header__menu menu">
+      <ul class="menu__list">
+        <li><a href="./air.html" class="menu__link">Повітря</a></li>
+        <li><a href="./water.html" class="menu__link">Потоки води</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+      <main class="page">
+        <div class="map">
+          <div
+            id="map"
+            class="map__map"
+            data-map-name="water"
+				data-map-zoom="12"
+            data-indicator-name="nh2"
+            data-indicator-bound="2"
+          ></div>
+        </div>
+      </main>
+    </div>
+    <!-- Swiper -->
+<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/app.min.js"></script>
+  </body>
+</html>
